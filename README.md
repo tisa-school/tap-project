@@ -1,47 +1,41 @@
-# Creeper front-display print kit
+# Minecraft Creeper enclosure
 
-**Latest: [download the eight-part print kit and illustrated instructions](Creeper-front-display-kit.zip).**
+**Latest: [download the six-part Minecraft Creeper kit](https://github.com/tisa-school/tap-project/raw/refs/heads/main/Creeper-Minecraft-kit.zip).**
 
-The red micro:bit LED display faces forward. The camera holder fits either side of the head, with a removable cover over the unused port. There are no hearts.
+The full Creeper face stays on the head; the red micro:bit 5×5 LED display faces forward on the body. Put the camera on either head side and cover the unused port. No hearts or separate pedestal.
 
-- [Illustrated assembly booklet (PDF)](Creeper-assembly-guide.pdf)
-- [Numbered print-parts picture](Creeper-parts.png)
-- [Six-step assembly picture](Creeper-assembly-steps.png)
-- [Individual STL files](Creeper-kit/STL)
+Approved assembled size: **103 W × 46 D × 222 H mm** (10.3 × 4.6 × 22.2 cm). This rehouses the electronics and replaces the original brick tower/base.
 
-## Eight printed pieces
+![Finished colour example](Creeper-Minecraft-preview.png)
+
+- [Download illustrated assembly booklet (PDF)](https://github.com/tisa-school/tap-project/raw/refs/heads/main/Creeper-Minecraft-guide.pdf)
+- [Parts picture](Creeper-Minecraft-parts.png)
+- [Assembly instructions picture](Creeper-Minecraft-assembly.png)
+- [Detailed sizing, hardware and printing notes](Creeper-Minecraft/README.md)
+
+## Individual STL downloads
 
 | No. | Piece | Download |
 |---|---|---|
-| 01 | Body front | [STL](Creeper-kit/STL/01_body_front.stl) |
-| 02 | Body back | [STL](Creeper-kit/STL/02_body_back.stl) |
-| 03 | Head front | [STL](Creeper-kit/STL/03_head_front.stl) |
-| 04 | Head back | [STL](Creeper-kit/STL/04_head_back.stl) |
-| 05 | Bottom tray | [STL](Creeper-kit/STL/05_bottom.stl) |
-| 06 | Unused-port cover | [STL](Creeper-kit/STL/06_camera_cover.stl) |
-| 07 | Hub holder | [STL](Creeper-kit/STL/07_hub_cradle.stl) |
-| 08 | Camera holder | [STL](Creeper-kit/STL/08_camera_cradle.stl) |
+| 01 | Body front | [STL](https://github.com/tisa-school/tap-project/raw/refs/heads/main/Creeper-Minecraft/STL/01_body_front.stl) |
+| 02 | Body back | [STL](https://github.com/tisa-school/tap-project/raw/refs/heads/main/Creeper-Minecraft/STL/02_body_back.stl) |
+| 03 | Head front | [STL](https://github.com/tisa-school/tap-project/raw/refs/heads/main/Creeper-Minecraft/STL/03_head_front.stl) |
+| 04 | Head back | [STL](https://github.com/tisa-school/tap-project/raw/refs/heads/main/Creeper-Minecraft/STL/04_head_back.stl) |
+| 05 | Camera foot pad | [STL](https://github.com/tisa-school/tap-project/raw/refs/heads/main/Creeper-Minecraft/STL/05_camera_pad.stl) |
+| 06 | Unused-port cover | [STL](https://github.com/tisa-school/tap-project/raw/refs/heads/main/Creeper-Minecraft/STL/06_port_cover.stl) |
 
-Print one of each in millimetres at 100% scale. Orientations are supplied; all pieces fit the Bambu P1S build volume. Inspect support generation in Bambu Studio before printing. Start with the optional hub-outline test and small holders to check the real hardware.
+Download and unzip the kit on your computer. Import the numbered STL files into Tinkercad or Bambu Studio in millimetres at **100% scale**. Print one of each. All six fit the Bambu P1S build volume in their supplied orientations. Check supports in the slicer before printing.
+
+The ZIP includes two optional small fit tests, six assembly images, a seven-page PDF, a pixel-colour reference, OpenSCAD source and digital-check results. Start with the fit tests. STL files store shape only; the green pixels and black face require painting or slicer colour painting.
 
 ## Additional hardware
 
-16 × M3×20 screws, 2 × M3×12 screws, 18 standard M3 nuts, two 10 mm hook-and-loop straps and two small cable ties. The illustrated booklet gives the locations and sequence. Hardware dimensions and quantities are for the prototype design, not a physically validated build.
+6 × M3×30 flat-head screws, 2 × M3×16 machine screws, 8 M3 hex nuts, 2 × M2×4 self-tapping screws, and four cable ties ≤3.5 mm wide (two around 250 mm and two around 150 mm). Use this kit's matching parts, instructions and hardware together.
 
-## Prototype limits
+## Fit prototype
 
-The parts are closed, connected meshes and their reference envelopes were checked for geometric interference. **They have not been print-tested, sliced in Bambu Studio, load-tested or fitted to the real electronics.** Hub thickness, camera thickness, connector locations, lens position/field of view and mounting tolerances still need physical validation. The design rehouses the electronics rather than enclosing the original custom brick tower/base.
+The downloadable case meshes are closed and connected, and the illustrative hardware envelopes were checked for solid interference. **This is not print-tested or physically fitted to the electronics.** The hub's 35 mm thickness and camera's 24 mm thickness are assumptions; connector locations, camera field of view, tolerances and support requirements still need checking. Published manufacturer dimensions and links are in the detailed notes and ZIP. Do not shrink the whole case to fit a space: that also shrinks its hardware cavities and screw holes. This case is unsealed and is not waterproof.
 
-The illustrations use an assumed 35 mm hub thickness and 24 mm camera thickness. Confirm actual hardware before large prints; do not force a fit. Source files and the detailed limitations are included in the ZIP.
+## Previous versions
 
-## Manufacturer references
-
-- [ELECFREAKS Smart AI Lens EF05045](https://github.com/elecfreaks/learn-en/blob/master/microbitplanetX/ai/Plant_X_EF05045.md): 35.96 mm wide × 60.90 mm total height with foot.
-- [ELECFREAKS Nezha EF05043](https://github.com/elecfreaks/learn-en/blob/master/microbitExtensionModule/nezha.md): 59.8 × 82.4 mm footprint.
-- [micro:bit Foundation mechanical specification](https://github.com/microbit-foundation/dev-docs/blob/main/hardware/2-0-revision.md#mechanical): 51.60 × 42.00 mm board.
-
-These are likely matches from the photo; revision labels are not confirmed. The cited drawings do not supply the missing camera/hub thicknesses.
-
-## Older files
-
-`Creeper.stl` is the old 290 mm one-piece figurine and exceeds the P1S build height. `Creeper-case-revision.zip` is an earlier top-display prototype. Use the latest front-display kit linked above for the requested layout.
+`Creeper-front-display-kit.zip` and `Creeper-kit/` are the earlier eight-part design with different joints and fasteners. `Creeper-case-revision.zip` is an older top-display prototype. `Creeper.stl` is the old 290 mm one-piece figurine, which exceeds P1S build height. Use the new six-part Minecraft kit above for the approved full-face design.
